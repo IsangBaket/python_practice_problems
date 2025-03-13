@@ -1,22 +1,12 @@
 #Prog01: Create a program that ask user to input 10 numbers. Display all numbers that don't have duplicate.
+a = []
 
-#pseudocode muna wala pako idea eh
+for _ in range(10):
+    c = int(input("Input a number: "))
+    a.append(c)
 
-#user input
-
-#for number in range 10
-#user input
-#return value of user input to list variable
-#
-#list of numbers without duplicate = []
-
-#if user input is equal to one
-#return list of numbers without duplicate
-
-#print list of numbers without duplicate
-#
-#
-#
-
+for e in a:
+    if a.count(e) == 1:
+        print(e)
 
 

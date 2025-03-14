@@ -5,10 +5,6 @@ for _ in range(10):
     user_input = int(input("Input a number: "))
     numbers_list.append(user_input)
 
-numbers_with_no_duplicates = []
+duplicates = {num for num in numbers_list if numbers_list.count(num) > 1}
 
-for num in numbers_list:
-    if num in numbers_with_no_duplicates:
-        numbers_with_no_duplicates.append(num) > 1
-        
-print(numbers_with_no_duplicates)
+print("Numbers with duplicates:", list(duplicates))

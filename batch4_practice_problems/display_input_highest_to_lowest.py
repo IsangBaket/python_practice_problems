@@ -2,13 +2,7 @@
 numbers_list = []
 
 while True:
-    try:
-        user_input = int(input("Input a number: "))  
-        numbers_list.append(user_input)
-    except ValueError:  
-        print("Invalid input. Exiting...\n")
-        break
-    
-numbers_list.sort(reverse=True)
-
-print("Numbers from highest to lowest:", numbers_list)
+    user_input = int(input("Input a number: ")) 
+    numbers_list.append(user_input)
+    numbers_list.sort(reverse=True)
+    print("Numbers from highest to lowest:", numbers_list)

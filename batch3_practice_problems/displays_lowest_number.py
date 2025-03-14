@@ -4,4 +4,4 @@ numbers_list = []
 while True:
     user_input = int(input("Input a number: "))
     numbers_list.append(user_input)
-    print(min(numbers_list))
+    print("lowest number is: ", min(numbers_list))

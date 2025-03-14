@@ -4,7 +4,8 @@ numbers_list = []
 while True:
     user_input = int(input("Input a number: "))
     numbers_list.append(user_input)
-    if numbers_list.count() == 1:
+
+    if numbers_list.count(user_input) == 1:
         print("Unique")
-    if numbers_list.count() > 1:
+    else:
         print("Duplicate")
